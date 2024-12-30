@@ -1,0 +1,27 @@
+{
+  "function": {
+    "testfn": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_testfn_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testfn"
+        }
+      ]
+    },
+    "AMPLIFY_function_testfn_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testfn"
+        }
+      ]
+    }
+  }
+}
