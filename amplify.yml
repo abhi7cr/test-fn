@@ -4,7 +4,8 @@ backend:
     build:
       commands:
         - amplify pull --appId d25ya7fvxn8c --envName dev --y
-        - cd amplify/backend/function/test-fn/dist
+        - cd amplify/backend/function/test-fn
+        - mkdir dist && cd ./dist
         - aws s3api get-object --bucket test-fns-rjabhi --key latest-build.zip latest-build.zip
         - amplify push --y
 frontend:
