@@ -7,7 +7,7 @@ backend:
         - cd amplify/backend/function/testfn
         - mkdir dist && cd ./dist
         - aws s3api get-object --bucket test-fns-rjabhi --key latest-build.zip latest-build.zip
-        - amplify push --y
+        - amplify push --y --force
 frontend:
   phases:
     build:
