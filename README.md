@@ -1,1 +1,1 @@
-Test amplify app
+Test amplify application with PR previews.
